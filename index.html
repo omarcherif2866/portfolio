@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alex Moreau — Développeur Full Stack</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+<link rel="icon" href="assets/favicon.jpg" type="image/png"></head>
+<body>
+
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ─── NAV ──────────────────────────────────────────── -->
+  <nav>
+    <a href="#" class="nav-logo">Omar Cherif<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">À propos</a></li>
+      <li><a href="#skills">Compétences</a></li>
+      <li><a href="#projects">Projets</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ─── HERO ─────────────────────────────────────────── -->
+  <section id="hero">
+    <div class="deco-circle circle-1"></div>
+    <div class="deco-circle circle-2"></div>
+
+    <div class="hero-content">
+      <p class="hero-label">// Développeur Full Stack</p>
+      <h1 class="hero-name">
+        Omar
+        <span class="accent-word">Cherif</span>
+      </h1>
+      <p class="hero-desc">
+        Je construis des expériences web performantes et des architectures scalables.
+        Passionné par le code propre, les interfaces soignées et les solutions qui durent.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary"><span>Voir mes projets</span></a>
+        <a href="#contact" class="btn-ghost">Me contacter</a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="code-block secondary">
+        <div class="code-dots">
+          <span class="code-dot dot-r"></span>
+          <span class="code-dot dot-y"></span>
+          <span class="code-dot dot-g"></span>
+        </div>
+        <span class="kw">const</span> <span class="fn">dev</span> = {<br>
+        &nbsp;&nbsp;name: <span class="str">'Alex'</span>,<br>
+        &nbsp;&nbsp;level: <span class="num">99</span><br>
+        }
+      </div>
+
+      <div class="code-block main">
+        <div class="code-dots">
+          <span class="code-dot dot-r"></span>
+          <span class="code-dot dot-y"></span>
+          <span class="code-dot dot-g"></span>
+        </div>
+        <span class="cm">// Construire l'impossible</span><br>
+        <span class="kw">async function</span> <span class="fn">buildApp</span>(<br>
+        &nbsp;&nbsp;idea: <span class="str">string</span><br>
+        ) {<br>
+        &nbsp;&nbsp;<span class="kw">const</span> app = <span class="kw">await</span><br>
+        &nbsp;&nbsp;<span class="fn">create</span>(idea);<br>
+        &nbsp;&nbsp;<span class="fn">deploy</span>(app);<br>
+        &nbsp;&nbsp;<span class="kw">return</span> <span class="str">✨ magic</span>;<br>
+        }
+      </div>
+
+      <div class="code-block tertiary">
+        <div class="code-dots">
+          <span class="code-dot dot-r"></span>
+          <span class="code-dot dot-y"></span>
+          <span class="code-dot dot-g"></span>
+        </div>
+        <span class="kw">npm</span> <span class="fn">run</span><br>
+        <span class="str">deploy</span><br>
+        <span class="cm">// ✓ Success!</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── STATS ─────────────────────────────────────────── -->
+  <!-- <div class="stats-bar">
+    <div class="stat-item">
+      <span class="stat-number" data-target="6">0</span>
+      <span class="stat-label">Années d'expérience</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-number" data-target="42">0</span>
+      <span class="stat-label">Projets livrés</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-number" data-target="18">0</span>
+      <span class="stat-label">Clients satisfaits</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-number" data-target="99">0</span>
+      <span class="stat-label">% Disponibilité</span>
+    </div>
+  </div> -->
+
+  <!-- ─── ABOUT ─────────────────────────────────────────── -->
+  <section id="about">
+    <div class="about-photo reveal">
+      <div class="photo-placeholder">👨‍💻</div>
+      <div class="photo-frame"></div>
+    </div>
+
+    <div class="about-text">
+      <p class="section-tag reveal">// À propos de moi</p>
+      <h2 class="section-title reveal">Développeur.<br>Créateur.</h2>
+      <div class="reveal">
+        <p>Bonjour ! Je suis <strong>Omar Cherif</strong>, développeur full stack basé à Tunis.
+          Depuis 2 ans, je transforme des idées complexes en produits digitaux élégants et performants.</p>
+        <p>Mon approche combine une <strong>rigueur technique</strong> et un sens aigu du détail.
+          Je crois qu'un bon code se lit comme un bon roman — clair, structuré, et expressif.</p>
+        <p>Actuellement disponible pour traduire <strong>tes idées</strong> en<strong> un projet fonctionnel</strong>.
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SKILLS ────────────────────────────────────────── -->
+  <section id="skills">
+    <div class="skills-header">
+      <div>
+        <p class="section-tag">// Stack technique</p>
+        <h2 class="section-title reveal">Ce que<br>je maîtrise</h2>
+      </div>
+    </div>
+
+<div class="skills-grid reveal">
+  <div class="skill-card" data-level="100">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="skill-icon">
+    <div class="skill-name">React</div>
+    <div class="skill-level"><div class="skill-level-fill"></div></div>
+  </div>
+  <div class="skill-card" data-level="100">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="Angular" class="skill-icon">
+    <div class="skill-name">Angular</div>
+    <div class="skill-level"><div class="skill-level-fill"></div></div>
+  </div>
+  <div class="skill-card" data-level="100">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" class="skill-icon">
+    <div class="skill-name">Node.js / Express</div>
+    <div class="skill-level"><div class="skill-level-fill"></div></div>
+  </div>
+  <div class="skill-card" data-level="100">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="SpringBoot" class="skill-icon">
+    <div class="skill-name">SpringBoot</div>
+    <div class="skill-level"><div class="skill-level-fill"></div></div>
+  </div>
+  <div class="skill-card" data-level="100">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django" class="skill-icon white-icon">
+    <div class="skill-name">Django</div>
+    <div class="skill-level"><div class="skill-level-fill"></div></div>
+  </div>
+  <div class="skill-card" data-level="100">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" class="skill-icon">
+    <div class="skill-name">MySQL</div>
+    <div class="skill-level"><div class="skill-level-fill"></div></div>
+  </div>
+  <div class="skill-card" data-level="100">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" class="skill-icon">
+    <div class="skill-name">MongoDB</div>
+    <div class="skill-level"><div class="skill-level-fill"></div></div>
+  </div>
+  <div class="skill-card" data-level="100">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="skill-icon white-icon">
+    <div class="skill-name">GitHub</div>
+    <div class="skill-level"><div class="skill-level-fill"></div></div>
+  </div>
+</div>
+  </section>
+
+  <!-- ─── PROJECTS ──────────────────────────────────────── -->
+  <section id="projects">
+    <div class="projects-intro">
+      <div>
+        <p class="section-tag">// Réalisations</p>
+        <h2 class="section-title reveal">Projets<br>récents</h2>
+      </div>
+    </div>
+
+    <div class="projects-grid reveal">
+      <!-- Featured -->
+      <div class="project-card featured">
+        <div>
+          <div class="project-number">01 — Food suggestions</div>
+          <div class="project-tag">Menu</div>
+          <h3 class="project-title" >Application de suggestions de repas</h3>
+          <p class="project-desc">Application web permettant aux utilisateurs de découvrir des suggestions de repas et de partager leurs propres plats avec la communauté.</p>
+          <div class="project-tech">
+            <span class="tech-tag">Angular</span>
+            <span class="tech-tag">NodeJS / expressjs</span>
+            <span class="tech-tag">MongoDB</span>
+          </div>
+          <div class="project-links">
+            <a href="https://food-wheat-ten.vercel.app/home" class="project-link" target="_blank" rel="noopener">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              Démo live
+            </a>
+          </div>         
+        </div>
+        <div class="project-preview">
+          <img src="assets/projects/food.png" alt="Aperçu Food Suggestions" class="project-preview-img">
+        </div>
+      </div>
+
+      <div class="project-card featured">
+        <div>
+          <div class="project-number">02 — E-commerce Multivendeurs</div>
+          <div class="project-tag">E-commerce</div>
+          <h3 class="project-title">ShopFlow — Plateforme e-commerce avec un tableau de bord</h3>
+          <p class="project-desc">Plateforme e-commerce multivendeurs permettant à plusieurs marchands de gérer leurs boutiques, produits et commandes depuis un tableau de bord centralisé.</p>
+          <div class="project-tech">
+            <span class="tech-tag">Angular</span>
+            <span class="tech-tag">NodeJS / expressjs</span>
+            <span class="tech-tag">MongoDB</span>
+          </div>
+          <div class="project-links">
+            <a href="https://ecommercemultivendeur.vercel.app/accueil" class="project-link" target="_blank" rel="noopener">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              Démo live
+            </a>
+          </div>  
+        </div>
+        <div class="project-preview">
+          <img src="assets/projects/multivendeurs.png" alt="Aperçu Food Suggestions" class="project-preview-img">
+        </div>
+      </div>
+
+      <div class="project-card featured">
+        <div>
+        <div class="project-number">03 — Platforme de ventes de services </div>
+        <div class="project-tag">Services</div>
+        <h3 class="project-title">OzissCorporation</h3>
+        <p class="project-desc">Plateforme de mise en relation permettant aux prestataires de proposer leurs services et aux clients de les découvrir, comparer et commander en ligne.</p>
+        <div class="project-tech">
+            <span class="tech-tag">Angular</span>
+            <span class="tech-tag">NodeJS / expressjs</span>
+            <span class="tech-tag">MongoDB</span>
+          </div>
+        </div>
+        <div class="project-preview">
+          <img src="assets/projects/oziss.png" alt="Aperçu Oziss Corporation" class="project-preview-img">
+        </div>
+      </div>
+      <!-- Project 2 -->
+      <!-- <div class="project-card">
+        <div class="project-number">02 — E-commerce Multivendeurs</div>
+        <div class="project-tag">E-commerce</div>
+        <h3 class="project-title">ShopFlow — Plateforme e-commerce avec un tableau de bord</h3>
+        <p class="project-desc">Plateforme e-commerce multivendeurs permettant à plusieurs marchands de gérer leurs boutiques, produits et commandes depuis un tableau de bord centralisé.</p>
+        <div class="project-tech">
+          <span class="tech-tag">Next.js</span>
+          <span class="tech-tag">Shopify API</span>
+          <span class="tech-tag">Tailwind</span>
+        </div>
+      </div> -->
+
+      <!-- Project 3 -->
+      <!-- <div class="project-card">
+        <div class="project-number">03</div>
+        <div class="project-tag">API</div>
+        <h3 class="project-title">NexAPI — Plateforme d'APIs managées</h3>
+        <p class="project-desc">Gestion, documentation et monitoring d'APIs. Rate limiting, authentification OAuth2, SDK auto-généré.</p>
+        <div class="project-tech">
+          <span class="tech-tag">Node.js</span>
+          <span class="tech-tag">GraphQL</span>
+          <span class="tech-tag">Docker</span>
+        </div>
+      </div> -->
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ───────────────────────────────────────── -->
+  <section id="contact">
+    <p class="section-tag reveal">// Travaillons ensemble</p>
+    <h2 class="contact-headline reveal">Votre prochain projet<br><em>commence ici.</em></h2>
+    <p class="contact-sub reveal">Disponible pour des projets freelance, des collaborations et des opportunités
+      à temps plein. N'hésitez pas à me contacter.</p>
+    <a href="mailto:comar2866@gmail.com" class="contact-email reveal">comar2866@gmail.com</a>
+    <a href="tel:+21695944004" class="contact-email reveal">+216 95 944 004</a>
+    <div class="social-links reveal">
+      <a href="https://github.com/omarcherif2866?tab=repositories" class="social-link" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/cherif-omar-427142223/" class="social-link" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="assets/cv omar.pdf" class="social-link" target="_blank" rel="noopener">CV francais</a>
+      <a href="assets/Cherif_Omar_Software_Engineer_CV.pdf" class="social-link" target="_blank" rel="noopener">CV anglais</a>
+      <a href="assets/Cherif Omar Resume.pdf" class="social-link" target="_blank" rel="noopener">CV canadien</a>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ────────────────────────────────────────── -->
+  <footer>
+    <span>© 2026 Omar Cherif</span>
+    <span>Designé &amp; développé avec ♥</span>
+    <span>Tunis, Tunisie</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
