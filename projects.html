@@ -7,7 +7,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="assets/favicon.jpg" type="image/png">
-  <style>
+ <style>
     /* ── PAGE HEADER ── */
     .page-header {
       padding: 10rem 4rem 4rem;
@@ -156,14 +156,23 @@
     .project-item.hidden { display: none; }
 
     /* ── RESPONSIVE ── */
-    @media (max-width: 900px) {
-      .page-header { padding: 8rem 2rem 3rem; }
-      .filters { padding: 1.5rem 2rem; }
-      .projects-page { padding: 2rem; }
-      .all-projects-grid { grid-template-columns: 1fr; }
-    }
     @media (max-width: 1200px) {
       .all-projects-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 768px) {
+      .page-header { padding: 7rem 1.5rem 2.5rem; }
+      .page-title { font-size: 2.2rem; }
+      .filters { padding: 1.2rem 1.5rem; gap: 0.5rem; }
+      .filter-btn { padding: 0.35rem 0.9rem; font-size: 0.58rem; }
+      .projects-page { padding: 1.5rem; }
+      .all-projects-grid {
+        grid-template-columns: 1fr;
+        gap: 1px;
+      }
+      .project-item { padding: 1.8rem; }
+      .project-item-img { aspect-ratio: 16/8; }
+      nav { padding: 1.2rem 1.5rem; }
+      .nav-links { display: none; }
     }
   </style>
 </head>
@@ -200,6 +209,8 @@
     <button class="filter-btn" data-filter="menu">Menu</button>
     <button class="filter-btn" data-filter="services">Services</button>
     <button class="filter-btn" data-filter="assurances">Assurances</button>
+    <button class="filter-btn" data-filter="Mobile">Mobile</button>
+
   </div>
 
   <!-- ALL PROJECTS -->
@@ -275,19 +286,19 @@
       </div>
 
       <!-- 05 — placeholder -->
-      <div class="project-item reveal" data-category="e-commerce">
-        <div class="project-item-placeholder">🏪</div>
-        <div class="project-tag">E-commerce</div>
-        <h3 class="project-title">Projet 5 — À venir</h3>
-        <p class="project-desc">Description de ton prochain projet. Remplace ce contenu par les vraies infos.</p>
+      <div class="project-item reveal" data-category="Mobile">
+        <img src="assets/projects/food.png" alt="Food Suggestions" class="project-item-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="project-tag">Mobile</div>
+        <h3 class="project-title">Application mobile de suggestions de repas</h3>
+        <p class="project-desc">Application web permettant aux utilisateurs de découvrir des suggestions de repas et de partager leurs propres plats avec la communauté.</p>
         <div class="project-tech" style="margin-bottom:1.2rem">
-          <span class="tech-tag">Angular</span>
-          <span class="tech-tag">Django</span>
-          <span class="tech-tag">MySQL</span>
+          <span class="tech-tag">React native</span>
+          <span class="tech-tag">NodeJS</span>
+          <span class="tech-tag">MongoDB</span>
         </div>
-        <a href="#" class="project-link">
+        <a href="https://ecommerce-multivendeur.my.canva.site/dagpchm0gty" class="project-link" target="_blank" rel="noopener">
           <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-          Bientôt disponible
+          Démo live
         </a>
       </div>
 
